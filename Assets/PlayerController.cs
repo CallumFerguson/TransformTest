@@ -7,6 +7,7 @@ public class PlayerController : NetworkBehaviour
 {
     void Start()
     {
+		//client or server no isLocalPlayer
 		transform.parent = GameObject.Find("Players").transform;
 		transform.localPosition = new Vector3(0, 1f, 0);
 		transform.rotation = GameObject.Find("Players").transform.rotation;
